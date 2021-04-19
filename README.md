@@ -22,7 +22,10 @@ Para este ejercicio debemos ingresar los datos de la siguiente ejercicio
  
  ![Ejercicio_2](https://user-images.githubusercontent.com/64930662/115181475-a72d3700-a09d-11eb-8b03-9a2487466ef0.png)
  
- Los valores para este ejercicio es:
+ Los valores para este ejercicio serian:
+ 
+ ![Ejericio2_Entrada](https://user-images.githubusercontent.com/64930662/115181611-ed829600-a09d-11eb-9eca-cbad751ee01f.png)
+
  
  
 
