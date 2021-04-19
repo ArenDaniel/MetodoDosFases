@@ -27,7 +27,7 @@ Para este ejercicio debemos ingresar los datos de la siguiente ejercicio
  
  ![Ejericio1_Entrada](https://user-images.githubusercontent.com/64930662/115181313-3b4ace80-a09d-11eb-9234-15844d69ccb5.png)
 
- #Ejercicio 3
+# Ejercicio 3.
 
  ![Ejercicio 3](https://user-images.githubusercontent.com/64930662/115285690-c6ff4200-a113-11eb-93f6-4bf9ed8c2fa1.png)
  
