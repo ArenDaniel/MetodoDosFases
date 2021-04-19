@@ -51,7 +51,6 @@ def pivote_dual(tabla): #De la tabla obtenemos el pivote y usamos dos fases para
     columnas_valores = [tabla[fila][c] / tabla[-1][c] for c in columnas]
     column_min_index = columnas_valores.index(min(columnas_valores))
     column = columnas[column_min_index]
-
     return fila, column
 
 def simplex_dual(c, A, b): ##Resolvemos por dos fases
@@ -63,12 +62,13 @@ def simplex_dual(c, A, b): ##Resolvemos por dos fases
 
     return solucion(tabla)
 
-c = [160, 120, 280,0,0]
+c = [315, 110, 50,0,0,0] #Coeficientes de la funcion Z a optimizar
 A = [
-    [-2, -1,  -4, 1, 0],
-    [-2, -2, -2, 0, 1],
+    [-15, -2,  -1, 1, 0,0], #Coeficientes de las restricciones
+    [-7.5, -3, -1, 0, 1,0],
+    [-5, -2, -1, 0, 0, 1]
 ]
-b = [-1, -1.5]
+b = [-200, -150, -120] #Segunda parte de la restriccion
 
 dual = funcion_valor(c, simplex_dual(c, A, b))
 print('Dual: ', dual)
