@@ -10,14 +10,18 @@ def basico(columna): #Retorna suma de las columnas
     return sum(columna) == 1 and len([c for c in columna if c == 0]) == len(columna) - 1
 
 def solucion(tabla): #Nos devuelve las soluciones en una lista 
-    columnas = np.array(tabla).T #Guardar las columnas de la tabla
+    columnas = np.array(tabla).T #Guardar las columnas de la tabla    
     soluciones = [] #Crear lista de soluciones
     for columna in columnas[:-1]:
         solucion = 0
         if basico(columna):
             uno = columna.tolist().index(1)
             solucion = columnas[-1][uno] #Solucionamos la columna
-        soluciones.append(solucion)        
+        soluciones.append(solucion)
+    x = 1
+    for i in soluciones:        
+        print('X',x,'',i)
+        x = x+1
     return soluciones #Retornamos la lista soluciones
 
 def paso_pivote(tabla, pos_pivote): ##Obtener la posicion del pivote
@@ -62,13 +66,12 @@ def simplex_dual(c, A, b): ##Resolvemos por dos fases
 
     return solucion(tabla)
 
-c = [315, 110, 50,0,0,0] #Coeficientes de la funcion Z a optimizar
+c = [160, 120, 280,0,0]        #Coeficientes de la funcion Z a optimizar
 A = [
-    [-15, -2,  -1, 1, 0,0], #Coeficientes de las restricciones
-    [-7.5, -3, -1, 0, 1,0],
-    [-5, -2, -1, 0, 0, 1]
+    [-2, -1,  -4, 1, 0],         #Coeficientes de las restricciones y las variables que adicionmaos
+    [-2, -2, -2, 0, 1],    
 ]
-b = [-200, -150, -120] #Segunda parte de la restriccion
+b = [-1, -1.5,]      #Segunda parte de la restriccion
 
 dual = funcion_valor(c, simplex_dual(c, A, b))
 print('Dual: ', dual)
