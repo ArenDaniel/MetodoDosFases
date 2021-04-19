@@ -1,85 +1,74 @@
-import math
-import numpy as np
-def to_tableau(c, A, b):
+import math     
+import numpy as np #Importar Librerias Math y Numpy
+
+def tablau(c, A, b):    #Funcion que obtiene los valores del problema y retorna unal ista para uso del programa
     xb = [eq + [x] for eq, x in zip(A, b)]
     z = c + [0]
     return xb + [z]
-def is_basic(column):
-    return sum(column) == 1 and len([c for c in column if c == 0]) == len(column) - 1
 
-def get_solution(tableau):
-    columns = np.array(tableau).T
-    solutions = []
-    for column in columns[:-1]:
-        solution = 0
-        if is_basic(column):
-            one_index = column.tolist().index(1)
-            solution = columns[-1][one_index]
-        solutions.append(solution)
-        
-    return solutions
+def basico(columna): #Retorna suma de las columnas
+    return sum(columna) == 1 and len([c for c in columna if c == 0]) == len(columna) - 1
 
-def pivot_step(tableau, pivot_position):
-    new_tableau = [[] for eq in tableau]
+def solucion(tabla): #Nos devuelve las soluciones en una lista 
+    columnas = np.array(tabla).T #Guardar las columnas de la tabla
+    soluciones = [] #Crear lista de soluciones
+    for columna in columnas[:-1]:
+        solucion = 0
+        if basico(columna):
+            uno = columna.tolist().index(1)
+            solucion = columnas[-1][uno] #Solucionamos la columna
+        soluciones.append(solucion)        
+    return soluciones #Retornamos la lista soluciones
+
+def paso_pivote(tabla, pos_pivote): ##Obtener la posicion del pivote
+    nueva_tabla = [[] for eq in tabla]    
+    i, j = pos_pivote
+    pivote_valor = tabla[i][j]
+    nueva_tabla[i] = np.array(tabla[i]) /  pivote_valor
     
-    i, j = pivot_position
-    pivot_value = tableau[i][j]
-    new_tableau[i] = np.array(tableau[i]) / pivot_value
-    
-    for eq_i, eq in enumerate(tableau):
+    for eq_i, eq in enumerate(tabla):
         if eq_i != i:
-            multiplier = np.array(new_tableau[i]) * tableau[eq_i][j]
-            new_tableau[eq_i] = np.array(tableau[eq_i]) - multiplier
-   
-    return new_tableau
+            multi = np.array(nueva_tabla[i]) * tabla[eq_i][j]
+            nueva_tabla[eq_i] = np.array(tabla[eq_i]) - multi  
+    return nueva_tabla
 
-def get_solution(tableau):
-    columns = np.array(tableau).T
-    solutions = []
-    for column in columns[:-1]:
-        solution = 0
-        if is_basic(column):
-            one_index = column.tolist().index(1)
-            solution = columns[-1][one_index]
-        solutions.append(solution)
-        
-    return solutions
-def to_objective_function_value(c, solution):
+def funcion_valor(c, solution):    
     return sum(np.array(c) * np.array(solution))
-def can_be_improved_for_dual(tableau):
-    rhs_entries = [row[-1] for row in tableau[:-1]]
-    return any([entry < 0 for entry in rhs_entries])
 
-def get_pivot_position_for_dual(tableau):
-    rhs_entries = [row[-1] for row in tableau[:-1]]
-    min_rhs_value = min(rhs_entries)
-    row = rhs_entries.index(min_rhs_value)
+def verificar_dual(tabla): #Funcion para verificar la solucion por metodo de dos fases
+    entradas    = [fila[-1] for fila in tabla[:-1]]
+    return any([entry < 0 for entry in entradas])
+
+def pivote_dual(tabla): #De la tabla obtenemos el pivote y usamos dos fases para retornar la fila y columna donde se encuentra
+    entradas = [fila[-1] for fila in tabla[:-1]]
+    valor_min = min(entradas)
+    fila = entradas.index(valor_min)
     
-    columns = []
-    for index, element in enumerate(tableau[row][:-1]):
+    columnas = []
+    for index, element in enumerate(tabla[fila][:-1]):
         if element < 0:
-            columns.append(index)
-    columns_values = [tableau[row][c] / tableau[-1][c] for c in columns]
-    column_min_index = columns_values.index(min(columns_values))
-    column = columns[column_min_index]
+            columnas.append(index)
+    columnas_valores = [tabla[fila][c] / tabla[-1][c] for c in columnas]
+    column_min_index = columnas_valores.index(min(columnas_valores))
+    column = columnas[column_min_index]
 
-    return row, column
+    return fila, column
 
-def dual_simplex(c, A, b):
-    tableau = to_tableau(c, A, b)
+def simplex_dual(c, A, b): ##Resolvemos por dos fases
+    tabla = tablau(c, A, b)
 
-    while can_be_improved_for_dual(tableau):
-        pivot_position = get_pivot_position_for_dual(tableau)
-        tableau = pivot_step(tableau, pivot_position)
+    while verificar_dual(tabla):
+        pivot_position = pivote_dual(tabla)
+        tabla = paso_pivote(tabla, pivot_position)
 
-    return get_solution(tableau)
+    return solucion(tabla)
 
-c = [160, 120, 280,0, 0]
+c = [160, 120, 280,0,0]
 A = [
-    [-4, -2,  -3, 1, 0],
-    [-8, -1, -2, 0, 1],    
+    [-2, -1,  -4, 1, 0],
+    [-2, -2, -2, 0, 1],
 ]
-b = [-2, -3]
+b = [-1, -1.5]
 
-dual = to_objective_function_value(c, dual_simplex(c, A, b))
+dual = funcion_valor(c, simplex_dual(c, A, b))
 print('Dual: ', dual)
