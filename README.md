@@ -8,7 +8,8 @@ Programa en python con el fin de desarrollar un problema por medio del método d
 Para usar el programa debemos ingresar los datos del ejercicio de una manera especifica.
 Para este ejercicio debemos ingresar los datos de la siguiente ejercicio
 
-![Ejericio1_Entrada](https://user-images.githubusercontent.com/64930662/115181313-3b4ace80-a09d-11eb-9234-15844d69ccb5.png)
+![Ejericio2_Entrada](https://user-images.githubusercontent.com/64930662/115181611-ed829600-a09d-11eb-9eca-cbad751ee01f.png)
+
 
  Para c ingresamos los coeficientes de la función Z
  Para A Ingresamos los coeficientes de las restricciones en negativo
@@ -24,7 +25,9 @@ Para este ejercicio debemos ingresar los datos de la siguiente ejercicio
  
  Los valores para este ejercicio serian:
  
- ![Ejericio2_Entrada](https://user-images.githubusercontent.com/64930662/115181611-ed829600-a09d-11eb-9eca-cbad751ee01f.png)
+ ![Ejericio1_Entrada](https://user-images.githubusercontent.com/64930662/115181313-3b4ace80-a09d-11eb-9234-15844d69ccb5.png)
+
+ 
 
  
  
