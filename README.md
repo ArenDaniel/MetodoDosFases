@@ -3,7 +3,9 @@ Programa en python con el fin de desarrollar un problema por medio del método d
 
 # Ejercicio 1.
 
-![Ejercicio_1](https://user-images.githubusercontent.com/64930662/115181153-ec049e00-a09c-11eb-91d3-ce34eb6f257d.png)
+![photo_2021-04-21_14-54-44](https://user-images.githubusercontent.com/64930662/115613211-bf759f80-a2b1-11eb-87b5-1e91f7bc778e.jpg)
+
+
 
 Para usar el programa debemos ingresar los datos del ejercicio de una manera especifica.
 Para este ejercicio debemos ingresar los datos de la siguiente ejercicio
