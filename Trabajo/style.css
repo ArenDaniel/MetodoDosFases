@@ -1,0 +1,19 @@
+.recuadro {
+  width:300px;
+  height:50px;
+  background-color: white;
+  border-style:solid;
+  border-color:black;
+  font-size:1.5em;
+  float: left;
+  text-align: center;
+}
+#palabras span {
+    font-size:1.5em;    
+    margin: 2px;
+    border: 2px solid #000;
+}
+#boton
+{
+    display: none;
+}
