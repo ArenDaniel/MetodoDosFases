@@ -73,16 +73,6 @@ def simplex_dual(c, A, b): ##Resolvemos por dos fases
 
     return solucion(tabla)
 
-##c = [160, 120, 280,0,0]        #Coeficientes de la funcion Z a optimizar
-##A = [
-##    [-2, -1,  -4, 1, 0],         #Coeficientes de las restricciones y las variables que adicionmaos
-##    [-2, -2, -2, 0, 1],    
-##]
-##b = [-1, -1.5,]      #Segunda parte de la restriccion
-##
-##dual = funcion_valor(c, simplex_dual(c, A, b))
-##print('Dual: ', dual)
-
 print("Metodo de las dos fases.")
 
 nr = int(input("Ingrese el numero de restricciones: "))
