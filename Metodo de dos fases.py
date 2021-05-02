@@ -1,5 +1,12 @@
+import os
 import math     
 import numpy as np #Importar Librerias Math y Numpy
+
+def borrarPantalla(): #Definimos la función estableciendo el nombre que queramos
+    if os.name == "posix":
+        os.system ("clear")
+    elif os.name == "ce" or os.name == "nt" or os.name == "dos":
+            os.system ("cls")
 
 def tablau(c, A, b):    #Funcion que obtiene los valores del problema y retorna unal ista para uso del programa
     xb = [eq + [x] for eq, x in zip(A, b)]
@@ -66,12 +73,97 @@ def simplex_dual(c, A, b): ##Resolvemos por dos fases
 
     return solucion(tabla)
 
-c = [160, 120, 280,0,0]        #Coeficientes de la funcion Z a optimizar
-A = [
-    [-2, -1,  -4, 1, 0],         #Coeficientes de las restricciones y las variables que adicionmaos
-    [-2, -2, -2, 0, 1],    
-]
-b = [-1, -1.5,]      #Segunda parte de la restriccion
+##c = [160, 120, 280,0,0]        #Coeficientes de la funcion Z a optimizar
+##A = [
+##    [-2, -1,  -4, 1, 0],         #Coeficientes de las restricciones y las variables que adicionmaos
+##    [-2, -2, -2, 0, 1],    
+##]
+##b = [-1, -1.5,]      #Segunda parte de la restriccion
+##
+##dual = funcion_valor(c, simplex_dual(c, A, b))
+##print('Dual: ', dual)
 
-dual = funcion_valor(c, simplex_dual(c, A, b))
+print("Metodo de las dos fases.")
+
+nr = int(input("Ingrese el numero de restricciones: "))
+nv = int(input("Ingrese el numero de variables: "))
+
+c = []
+a = []
+b = []
+
+print("A continuacion ingrese en orden los coeficientes de la Funcion Z a optimizar")
+for i in range(nv):    
+    print("Ingrese coeficiente",i+1," de la funcion Z")
+    z = input("Z: ")
+    c.append(float(z))
+for i in range(nr):
+    c.append(float(0))
+    if(nr == 1):
+        c.append(float(0))
+
+
+borrarPantalla()
+
+print("A continuacion ingrese los coeficientes y el segundo miembro de la desigualdad")
+for i in range(nr):
+    laux =[]
+    print("Ingrese coeficientes de la restriccion numero", i+1)
+    for j in range(nv+1):
+        print("Variable:",j+1)        
+        x = float(input("Dato: "))
+        x = x*-1        
+        if(j == nv):
+            b.append(float(x))
+        else:
+            laux.append(float(x))            
+    a.append(laux)    
+    borrarPantalla()
+
+if(nr == 1):
+    a[0].append(float(1))
+    a[0].append(float(0))   
+        
+if(nr == 2):
+    a[0].append(float(1))
+    a[0].append(float(0))
+    
+    a[1].append(float(0))
+    a[1].append(float(1))
+    
+if(nr == 3):
+    a[0].append(float(1))
+    a[0].append(float(0))
+    a[0].append(float(0))
+    
+    a[1].append(float(0))
+    a[1].append(float(1))
+    a[1].append(float(0))
+
+    a[2].append(float(0))
+    a[2].append(float(0))
+    a[2].append(float(1))
+    
+dual = funcion_valor(c, simplex_dual(c, a, b))
 print('Dual: ', dual)
+
+    
+        
+
+
+    
+
+        
+        
+
+
+
+
+    
+        
+    
+    
+
+
+
+
