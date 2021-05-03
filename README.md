@@ -48,7 +48,7 @@ Se nos muestra una pantalla con los valores que tomaron de las variables y en ul
  
 # Ejemplo 2
  
- ![photo_2021-04-21_14-54-46](https://user-images.githubusercontent.com/64930662/115613332-e3d17c00-a2b1-11eb-9f09-e60c70821a43.jpg)
+![photo_2021-04-21_14-54-46](https://user-images.githubusercontent.com/64930662/115613332-e3d17c00-a2b1-11eb-9f09-e60c70821a43.jpg)
 
 ## Paso 1 Entrega de datos funcion Z
 ![2 1](https://user-images.githubusercontent.com/64930662/116834999-30586980-ab86-11eb-99e5-c62a8eee40df.png)
@@ -56,22 +56,35 @@ Se nos muestra una pantalla con los valores que tomaron de las variables y en ul
 ## Paso 2 Entrega de datos Desigualdadades
 ![2 2](https://user-images.githubusercontent.com/64930662/116835002-30f10000-ab86-11eb-8e8e-3e70d5f6c190.png)
 
-## Paso 3
+### Desigualdad 2
 ![2 3](https://user-images.githubusercontent.com/64930662/116835005-30f10000-ab86-11eb-9c34-964033df2e21.png)
 
-## Paso 4 Resutlado
+## Paso 3 Resutlado
 ![2 4](https://user-images.githubusercontent.com/64930662/116834997-2fbfd300-ab86-11eb-9028-002ef9c7d701.png)
 
 
 
 
 
+# Ejercicio 3.
+![photo_2021-04-21_14-54-52](https://user-images.githubusercontent.com/64930662/115613351-e9c75d00-a2b1-11eb-91fb-9d5d86a3c8b4.jpg)
 
- 
+## Paso 1 Entrega de datos funcion Z
+![3 1](https://user-images.githubusercontent.com/64930662/116835050-672e7f80-ab86-11eb-90d2-eb26fa64a2e8.png)
 
- # Ejercicio 3.
- ![photo_2021-04-21_14-54-52](https://user-images.githubusercontent.com/64930662/115613351-e9c75d00-a2b1-11eb-91fb-9d5d86a3c8b4.jpg)
- 
+## Paso 2 Entrega de datos Desigualdadades
+### Desigualdad 1
+![3 2](https://user-images.githubusercontent.com/64930662/116835051-672e7f80-ab86-11eb-9883-b7c49abbd2c8.png)
+### Desigualdad 2
+![3 3](https://user-images.githubusercontent.com/64930662/116835052-67c71600-ab86-11eb-81de-422dd24c7b47.png)
+### Desigualdad 3
+![3 4](https://user-images.githubusercontent.com/64930662/116835060-6eee2400-ab86-11eb-845a-16b9318bfcbd.png)
+
+## Paso 3 Resutlado
+
+![3 5](https://user-images.githubusercontent.com/64930662/116835049-6695e900-ab86-11eb-8839-0822cd2da23f.png)
+
+
   Los valores de entrada para este ejercicio serian:
  
 
