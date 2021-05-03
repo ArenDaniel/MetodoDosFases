@@ -5,6 +5,8 @@ Programa en python con el fin de desarrollar un problema por medio del método d
 
 Para usar correctamente el programa hecho en python 3 debemos introducir correctamente los datos, a continuacion usaremos un ejemplo para ilustrar la forma correcta de introducir los datos.
 
+## Reconocer las partes del ejercicio.
+
 
 
 # Ejercicio 1.
