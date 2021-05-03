@@ -1,5 +1,11 @@
 # MetodoDosFases
-Programa en python con el fin de desarrollar un problema por medio del método de dos fases
+Programa en python con el fin de desarrollar un problema por medio del método de dos fases. 
+
+# Como Ingresar los Datos al programa.
+
+Para usar correctamente el programa hecho en python 3 debemos introducir correctamente los datos, a continuacion usaremos un ejemplo para ilustrar la forma correcta de introducir los datos.
+
+
 
 # Ejercicio 1.
 
