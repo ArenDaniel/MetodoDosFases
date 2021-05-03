@@ -70,6 +70,7 @@ Se nos muestra una pantalla con los valores que tomaron de las variables y en ul
 
 ## Paso 1 Entrega de datos funcion Z
 ![4 1](https://user-images.githubusercontent.com/64930662/116908253-4ad32700-ac08-11eb-9fda-302a29f739c0.png)
+
 ## Paso 2 Entrega de datos Desigualdadades
 
 ### Desigualdad 1
