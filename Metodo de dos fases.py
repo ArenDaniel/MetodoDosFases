@@ -92,7 +92,6 @@ for i in range(nr):
     if(nr == 1):
         c.append(float(0))
 
-
 borrarPantalla()
 
 print("A continuacion ingrese los coeficientes y el segundo miembro de la desigualdad")
@@ -135,7 +134,7 @@ if(nr == 3):
     a[2].append(float(1))
     
 dual = funcion_valor(c, simplex_dual(c, a, b))
-print('Dual: ', dual)
+print('Solucion Final: ', dual)
 
     
         
