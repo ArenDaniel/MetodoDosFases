@@ -39,34 +39,34 @@ Como ejemplo usaremos el ejercicio anterior.
 ![4](https://user-images.githubusercontent.com/64930662/116834486-f5edcd00-ab83-11eb-9c5c-fb126f44afe7.png)
 
 
-# El resultado
+# El resultado Paso 4.
 
 Se nos muestra una pantalla con los valores que tomaron de las variables y en ultimo luhar la funcion Z evaluada en los valores nombrados.
 
 ![5](https://user-images.githubusercontent.com/64930662/116834481-f38b7300-ab83-11eb-8316-f4745b102b32.png)
 
-
-
-
-
-
-Para usar el programa debemos ingresar los datos del ejercicio de una manera especifica.
-Para este ejercicio debemos ingresar los datos de la siguiente ejercicio
-
-
- Para c ingresamos los coeficientes de la función Z
- Para A Ingresamos los coeficientes de las restricciones en negativo
- Para B Ingresamos los resultados de las coeficientes en negativo
  
- 
- ## Entrega del resultado.
- El programa entrega el valor de la funcion Z evaluada en el resultado obtenido de las variables del programa.
- 
-  # Ejercicio 2
+# Ejemplo 2
  
  ![photo_2021-04-21_14-54-46](https://user-images.githubusercontent.com/64930662/115613332-e3d17c00-a2b1-11eb-9f09-e60c70821a43.jpg)
 
-  Los valores de entrada para este ejercicio serian:
+## Paso 1 Entrega de datos funcion Z
+![2 1](https://user-images.githubusercontent.com/64930662/116834999-30586980-ab86-11eb-99e5-c62a8eee40df.png)
+
+## Paso 2 Entrega de datos Desigualdadades
+![2 2](https://user-images.githubusercontent.com/64930662/116835002-30f10000-ab86-11eb-8e8e-3e70d5f6c190.png)
+
+## Paso 3
+![2 3](https://user-images.githubusercontent.com/64930662/116835005-30f10000-ab86-11eb-9c34-964033df2e21.png)
+
+## Paso 4 Resutlado
+![2 4](https://user-images.githubusercontent.com/64930662/116834997-2fbfd300-ab86-11eb-9028-002ef9c7d701.png)
+
+
+
+
+
+
  
 
  # Ejercicio 3.
