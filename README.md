@@ -23,15 +23,22 @@ El programa nos solicitara los datos de los coeficientes de cada una de las vari
 Como ejemplo usaremos el ejercicio anterior.
 
 Lo primero que se nos solicita es el numero de restricciones y variables.
+
 ![1](https://user-images.githubusercontent.com/64930662/116834483-f4240980-ab83-11eb-93b2-2ab3c5718b8e.png)
 
+
 Lo segundo son los valores de los coeficientes de la funcion Z.
+
 ![2](https://user-images.githubusercontent.com/64930662/116834484-f4bca000-ab83-11eb-84af-31dd56230a83.png)
 
+
 Luego de completar los datos de la funcion Z, se requieren los valores de los coeficientes de cada restrcción.
+
 ![3](https://user-images.githubusercontent.com/64930662/116834485-f4bca000-ab83-11eb-971f-629766ef4c52.png)
 
+
 ![4](https://user-images.githubusercontent.com/64930662/116834486-f5edcd00-ab83-11eb-9c5c-fb126f44afe7.png)
+
 
 # El resultado
 
