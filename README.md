@@ -7,6 +7,9 @@ Para usar correctamente el programa hecho en python 3 debemos introducir correct
 
 ## Reconocer las partes del ejercicio.
 El programa nos solicitara los datos de los coeficientes de cada una de las variables presentes.
+
+![photo_2021-05-02_21-01-26](https://user-images.githubusercontent.com/64930662/116835779-95fa2500-ab89-11eb-868c-24c1ad2d8b9e.jpg)
+
 **La funcion Z**: Los datos los daremos de izquierda a derecha teniendo en cuenta el valor.
 
 **Desigualdades**: Los datos los daremos de izquierda a derecha teniendo en cuenta el valor. El dato numero 1 correspondera al coeficiente de la variable 1, el dato 2 corresponderá al dato de la variable 2, el ultimo dato que seria (numero de variables + 1) correspondera al segundo miembro de la desigualdad.
