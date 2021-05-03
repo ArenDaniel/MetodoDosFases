@@ -54,7 +54,11 @@ Se nos muestra una pantalla con los valores que tomaron de las variables y en ul
 ![photo_2021-04-21_14-54-46](https://user-images.githubusercontent.com/64930662/115613332-e3d17c00-a2b1-11eb-9f09-e60c70821a43.jpg)
 
 ## Paso 1 Entrega de datos funcion Z
-![2 1](https://user-images.githubusercontent.com/64930662/116834999-30586980-ab86-11eb-99e5-c62a8eee40df.png)
+![2 1](https://user-images.githubusercontent.com/64930662/116834999-30586980-ab86-11eb-99e5-c62a8eee40df.png
+![4 1](https://user-images.githubusercontent.com/64930662/116908253-4ad32700-ac08-11eb-9fda-302a29f739c0.png)![4 2](https://user-images.githubusercontent.com/64930662/116908257-4b6bbd80-ac08-11eb-86bd-19b49a28386f.png)
+![4 3](https://user-images.githubusercontent.com/64930662/116908258-4b6bbd80-ac08-11eb-86cd-7363771e56db.png)
+![4 4](https://user-images.githubusercontent.com/64930662/116908260-4b6bbd80-ac08-11eb-9fa0-525b96bed934.png)
+
 
 ## Paso 2 Entrega de datos Desigualdadades
 ![2 2](https://user-images.githubusercontent.com/64930662/116835002-30f10000-ab86-11eb-8e8e-3e70d5f6c190.png)
@@ -64,6 +68,10 @@ Se nos muestra una pantalla con los valores que tomaron de las variables y en ul
 
 ## Paso 3 Resultado
 ![2 4](https://user-images.githubusercontent.com/64930662/116834997-2fbfd300-ab86-11eb-9028-002ef9c7d701.png)
+
+#Ejercicio 3
+![Ejemplo 3](https://user-images.githubusercontent.com/64930662/116907929-e4e69f80-ac07-11eb-97fd-870633db1056.png)
+
 
 
 
