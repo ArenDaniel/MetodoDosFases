@@ -59,9 +59,8 @@ Se nos muestra una pantalla con los valores que tomaron de las variables y en ul
 ### Desigualdad 2
 ![2 3](https://user-images.githubusercontent.com/64930662/116835005-30f10000-ab86-11eb-9c34-964033df2e21.png)
 
-## Paso 3 Resutlado
+## Paso 3 Resultado
 ![2 4](https://user-images.githubusercontent.com/64930662/116834997-2fbfd300-ab86-11eb-9028-002ef9c7d701.png)
-
 
 
 
@@ -80,21 +79,6 @@ Se nos muestra una pantalla con los valores que tomaron de las variables y en ul
 ### Desigualdad 3
 ![3 4](https://user-images.githubusercontent.com/64930662/116835060-6eee2400-ab86-11eb-845a-16b9318bfcbd.png)
 
-## Paso 3 Resutlado
+## Paso 3 Resultado
 
 ![3 5](https://user-images.githubusercontent.com/64930662/116835049-6695e900-ab86-11eb-8839-0822cd2da23f.png)
-
-
-  Los valores de entrada para este ejercicio serian:
- 
-
-
-
- 
-
- 
- 
-
- 
- 
- 
